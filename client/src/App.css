@@ -1,0 +1,52 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg-lienar font-rubik
+  }
+
+  .modal-input {
+    @apply outline-none px-2 py-3 rounded-lg text-brand-black-primary bg-gray-200 w-full
+  }
+
+  .modal-label {
+    @apply block capitalize text-brand-black-primary text-xl mb-1
+  }
+
+  .btn-hover {
+    @apply duration-500 border border-brand-mainColor hover:bg-transparent hover:shadow-md hover:shadow-brand-mainColor hover:text-brand-mainColor
+  }
+
+  .btn-rounded {
+    @apply rounded-tl-full rounded-tr-full rounded-bl-full
+  }
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: auto 0;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #FF7A50;
+  border-color: #FF7A50 transparent #FF7A50 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
